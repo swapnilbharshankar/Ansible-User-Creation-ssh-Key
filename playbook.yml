@@ -1,0 +1,4 @@
+---
+ - hosts: USERS_CREATION
+   roles:
+     - users

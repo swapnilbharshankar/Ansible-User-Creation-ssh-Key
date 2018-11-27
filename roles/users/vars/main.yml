@@ -1,0 +1,5 @@
+vars:
+  users:
+  - swapnil@example.com
+  - ekant@example.com
+  - dev@example.com
