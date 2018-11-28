@@ -1,0 +1,11 @@
+---
+
+  - name: Upload ssh keys to users home dir
+    authorized_key: user={{ item.username }}
+      key="{{ lookup('file', '{{ item.username }}/{{ item.username }}.pub') }}"
+#      path='/home/{{ item.username }}/.ssh/authorized_keys'
+#      manage_dir=no
+    with_items: '{{users}}'
+    tags:
+     - upload
+

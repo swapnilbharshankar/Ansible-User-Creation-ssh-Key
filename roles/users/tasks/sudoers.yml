@@ -1,0 +1,11 @@
+---
+  - name: Add Users in Sudoers file
+    lineinfile: "dest=/etc/sudoers
+      insertafter=EOF
+      line='{{ item.username }} ALL=(ALL) NOPASSWD: ALL'
+      regexp='^{{ item.username }} .*'
+      state=present"
+    with_items: '{{users}}'
+    tags:
+     - sudo_add
+

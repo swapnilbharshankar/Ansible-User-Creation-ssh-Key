@@ -1,40 +1,7 @@
 ---
-  - name:
-    group:
-      name: sudo_group
-      state: present
-    tags:
-      - usercreate
-
-  - name: create user 
-    user:
-      name: "{{ item }}"
-      groups: "sudo_group"
-      shell: /bin/bash
-      create_home: yes
+  - name: Create User, Home Dir, Bash
+    user: name={{ item.username }} shell=/bin/bash createhome=yes comment='Managed By Swapnil'
     with_items: "{{ users }}"
     tags:
-      - usercreate
+     - create
 
-  - name: Add Autorized keys
-    authorized_key:
-      user: "{{ item }}"
-      key: "{{ lookup('file', 'files/'+ item + '.key.pub') }}"
-    with_items: "{{ users }}"
-
-  - name: check user group
-    lineinfile:
-      dest: /etc/sudoers.d/cloud-init
-      state: present
-      regexp: '^%sudo_group' 
-      line: '%sudo_group ALL=(ALL) ALL'
-
-  - name: add user into user group
-    lineinfile:
-      dest: /etc/sudoers.d/cloud-init
-      state: present
-      regexp: '^User_Alias sudo_group'
-      line: 'User_Alias sudo_group = "{{ items|join(', ') }}"'
-    with_items: "{{ users }}"
-
-    

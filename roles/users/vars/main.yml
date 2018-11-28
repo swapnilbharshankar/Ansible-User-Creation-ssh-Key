@@ -1,5 +1,9 @@
-vars:
-  users:
-  - swapnil@example.com
-  - ekant@example.com
-  - dev@example.com
+---
+users:
+  - username: uma_shankar
+  - username: anant_agrawal
+  - username: gourav_garg
+  - username: Sudhir_kumar
+  - username: swapnil_bharshankar
+  - username: ekant_mate
+  - username: dev_sawant

@@ -1,3 +1,13 @@
 ---
   - include: usercreation.yml
-  
+    tags:
+     - create
+
+  - include: upload_keys.yml
+    tags:
+     - upload
+
+  - include: sudoers.yml
+    tags:
+     - sudo_add
+
