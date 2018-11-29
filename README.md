@@ -12,14 +12,16 @@ Vender3|user5
 Vender3|user6
 ```
 
-- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `Note:- Please remove the space space at the end of line if any.`
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `Note:- Please remove the space space at the end of line if any.`
 
 
 2) Create User pem, ppk, pub key
 
 Run below shell script
 
+```
 sh key_creation.sh
+```
 
 it will create the keys
 
@@ -43,7 +45,9 @@ root@ip-10-10-3-202:/home/ubuntu/Ansible-User-Creation-ssh-Key#
 
 3) Create a yml variable file
 
+```
 sh add_user_var.sh
+```
 
 It will add the usernames in yml variable file.
 
