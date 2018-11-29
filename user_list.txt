@@ -1,7 +1,6 @@
-Kuliza|uma_shankar
-Kuliza|anant_agrawal
-LMS|gourav_garg
-LMS|Sudhir_kumar
-Blazeclan|swapnil_bharshankar
-Blazeclan|ekant_mate
-ABFL|dev_sawant
+Vender1|user1
+Vender1|user2
+Vender2|user3
+Vender2|user4
+Vender3|user5
+Vender3|user6

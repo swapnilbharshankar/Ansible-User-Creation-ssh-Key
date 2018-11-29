@@ -1,9 +1,8 @@
 ---
 users:
-  - username: uma_shankar
-  - username: anant_agrawal
-  - username: gourav_garg
-  - username: Sudhir_kumar
-  - username: swapnil_bharshankar
-  - username: ekant_mate
-  - username: dev_sawant
+  - username: user1
+  - username: user2
+  - username: user3
+  - username: user4
+  - username: user5
+  - username: user6
