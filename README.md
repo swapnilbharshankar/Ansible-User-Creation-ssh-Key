@@ -12,9 +12,8 @@ Vender3|user5
 Vender3|user6
 ```
 
-Note:- Please remove the space space at the end of line if any.
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `Note:- Please remove the space space at the end of line if any.`
 
------------
 
 2) Create User pem, ppk, pub key
 
